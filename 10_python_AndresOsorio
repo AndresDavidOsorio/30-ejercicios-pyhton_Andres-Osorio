@@ -1,0 +1,22 @@
+#************************zona de funciones******************************
+def pedir_longitud():
+    longitud =int(input("digite la longitud del prisma "))
+    return longitud
+def pedir_ancho():
+    ancho=int(input("digite el ancho del prisma "))
+    return ancho
+def pedir_altura():
+    altura=int(input("digite la altura del prisma "))
+    return altura
+def hacer_calculo(longitud,ancho,altura):
+    total=longitud*ancho*altura
+    return total
+def mostrar_resultado(total):
+    print("el volummen del prisma rectangular es " + str(total))
+
+#********************zona de codigo princiapal******************************
+longitud=pedir_longitud()
+ancho=pedir_ancho()
+altura=pedir_altura()
+total=hacer_calculo(longitud,ancho,altura)
+mostrar_resultado(total)
