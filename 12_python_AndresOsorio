@@ -1,0 +1,14 @@
+#****************************zona de funcion***************************+
+def pedir_lado():
+    lado=int(input("digite un lado "))
+    return lado
+def hacer_calculo(lado):
+    area= lado^2
+    return area
+def mostrar_mensaje(area):
+    print("el area del cuadrado es " + str(area))
+
+#*******************************zona de codigo principal******************************
+lado=pedir_lado()
+area=hacer_calculo(lado)
+mostrar_mensaje(area)
