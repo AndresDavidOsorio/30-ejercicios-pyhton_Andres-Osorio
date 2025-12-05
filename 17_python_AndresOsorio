@@ -1,0 +1,16 @@
+#********************************zona funcion********************
+def solicitar_las_libras():
+    libra = float(input("Digite las libras que se pasaran a kilogramos:"))
+    return libra
+def calculo(libra):
+    total= 0.454 * libra
+    return total
+def mostrar_resultado(total):
+    print("sus kilogramos en libras es"+ str(total))
+
+
+
+#****************************codigo principal****************************
+libra = solicitar_las_libras()
+total= calculo(libra)
+mostrar_resultado(total)
