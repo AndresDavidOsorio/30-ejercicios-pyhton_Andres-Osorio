@@ -1,0 +1,17 @@
+#*********************** zona funcion *******************
+def solicitar_datos():
+    base = float(input("Digite la base del paralelograma  "))
+    altura = float(input("Digite la altura del paralelograma  "))
+    return base, altura
+def total(base, altura):
+    area= base * altura
+    return area
+def mensaje(area):
+    print("el area del paralelograma es:  "+ str(area))
+
+
+
+#*********************codigo principal**********************
+base, altura = solicitar_datos()
+area = total(base,altura)
+mensaje(area)
