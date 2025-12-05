@@ -1,0 +1,14 @@
+#*****************zona de funcion*********************+
+def solicitar_kilometros():
+    kilometros=int(input("digite cuantos kilometros va a pasar a millas "))
+    return kilometros
+def hacer_calculo(kilometros):
+    total= 0.621371 * kilometros
+    return total
+def mostra_resultado(total):
+    print("sus kilometros en millas son " + str(total))
+
+#*****************zona de codigo principal********************
+kilometros=solicitar_kilometros()
+total=hacer_calculo(kilometros)
+mostra_resultado(total)
