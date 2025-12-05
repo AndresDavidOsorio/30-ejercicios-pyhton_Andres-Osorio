@@ -1,0 +1,20 @@
+#****************************zona de funcion**************************************
+
+def solicitar_radio():
+    radio= int(input("escriba el radio del circulo"))
+    return radio
+
+def hacer_calculo(radio):
+    calculo = 3.1416 * (radio^2)
+    return calculo
+
+
+def mostrar_resultados(calculo):
+    print("el area del circulo es " + str(calculo))
+
+#*****************************zona de codigo principal*************************************
+
+
+radio= solicitar_radio()
+calculo = hacer_calculo(radio)
+mostrar_resultados(calculo)
