@@ -1,0 +1,15 @@
+#*******************zona funcion********************
+def solicitar_lado():
+    lado = float(input("Digite la longitud del lado del cubo:"))
+    return lado
+def cacular_volumen(lado):
+    volumen = lado ** 3
+    return volumen
+def dar_total(volumen):
+    print("el volumen del cubo es:"+ str(volumen))
+
+
+#*************************codigo principal******************
+lado = solicitar_lado()
+volumen = cacular_volumen(lado)
+dar_total(volumen)
