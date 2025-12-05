@@ -1,0 +1,21 @@
+#************************zona de funcion******************************
+base_radio=20
+altura=4
+pi=3.14
+
+def encontrar_datos(base_radio,altura):
+    volumen=((pi*base_radio**2)*altura)
+    return volumen
+
+def total (volumen):
+    print= ("el resultado es: {volumen}")
+
+def mensaje ():
+    print= ("\n*********SE ENCONTRO EL VOLUMEN DEL CILINDRO*****************")
+
+
+#***********************ZONA DE CODIGO PRINCIPAL***********************************
+volumen_cilindro=encontrar_datos(base_radio,altura) 
+total=(volumen_cilindro)  
+mensaje=(volumen_cilindro)
+    
