@@ -1,0 +1,19 @@
+#****************************************zona funcion*************************
+def solicitar_datos():
+    base =float(input("Digite la base del prisma triangular:"))
+    altura = float (input("Digite la altura del prisma triangular:"))
+    ancho = float(input("Digite el ancho del prisma triangular:"))
+    return base, altura, ancho
+def hacer_calculo(base, altura,ancho):
+    total= (base * altura * ancho)/3
+    return total
+def mostrar_resultados(total):
+    print("El volumen del prisma triangular es"+ str(total))
+
+
+
+#***********************************codigo principal************************
+base, altura, ancho = solicitar_datos()
+total = hacer_calculo(base, altura, ancho)
+mostrar_resultados(total)
+    
