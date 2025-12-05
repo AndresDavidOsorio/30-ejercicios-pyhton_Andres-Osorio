@@ -1,0 +1,16 @@
+#********************************* zona funcion ******************************
+
+def solicitar_pulgadas():
+    pulgadas= int(input("Digite cuantas pulgadas va a pasar a centimetros:"))
+    return pulgadas
+def hacer_calculo(pulgadas):
+    calculo= 2.54 * pulgadas
+    return calculo
+def mostrar_resultado(calculo):
+    print("pulgadas a centietros es"+ str(calculo))
+
+
+#***************************** codigo principal *********************
+pulgadas = solicitar_pulgadas()
+calculo = hacer_calculo(pulgadas)
+mostrar_resultado(calculo)
