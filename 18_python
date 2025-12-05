@@ -1,0 +1,18 @@
+#*****************zona funcion************************
+def solicitar_datos():
+    lado = float(input("Digite el lado del  haxagono reagular:"))
+    base = float(input("Digite la base del hexagono regular:"))
+    altura = float (input("Digite la altura del hexagono regular:"))
+    return lado, base, altura
+def calculo(lado, base, altura):
+    return (base * lado ) /2 * altura
+def mensaje(area):
+    print("el area del hexagono regular es "+ str(area))
+
+
+
+#**********************codigo principal**********************
+lado, base, altura = solicitar_datos()
+area = calculo(lado, base, altura)
+mensaje(area)
+    
