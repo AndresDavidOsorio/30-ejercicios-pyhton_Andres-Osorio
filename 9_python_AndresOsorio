@@ -1,0 +1,22 @@
+#******************zona de funcion****************************
+def solicitar_base_A():
+    base_A = int(input("digite el largo de la base a  "))
+    return base_A
+def solicitar_base_B():
+    base_B= int(input("digite el largo de la base b  "))
+    return base_B
+def pedir_altura():
+    altura=int(input("digite la altura del trapecio "))
+    return altura
+def hacer_calculo(base_A ,base_B,altura):
+    total= ((base_A + base_B)* altura)/2
+    return total
+def mostrar_resultado(total):
+    print("el area del trapecio es " + str(total))
+
+#************************zona de codigo principal********************
+base_A= solicitar_base_A()
+base_B= solicitar_base_B()
+altura=pedir_altura()
+total=hacer_calculo(base_A,base_B,altura)
+mostrar_resultado(total)
