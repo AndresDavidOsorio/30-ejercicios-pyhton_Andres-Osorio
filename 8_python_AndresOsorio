@@ -1,0 +1,18 @@
+#****************************zona funcion**************************
+def pedir_cantidad():
+    cantidad= float(input("digite la cantidad para cambiar"))
+    return cantidad
+def pedir_tasa_cambio():
+    tasa_cambio=float(input("digite la tasa de cambio "))
+    return tasa_cambio
+def hacer_calculo(cantidad,tasa_cambio):
+    total = tasa_cambio * cantidad
+    return total
+def mostrar_resultados(total):
+    print("la cantidad  total hecho el cambio es " + str(total))
+
+#***************************************zona de codigo principal*******************
+cantidad = pedir_cantidad()
+tasa_cambio= pedir_tasa_cambio()
+total= hacer_calculo(cantidad,tasa_cambio)
+mostrar_resultados(total)
