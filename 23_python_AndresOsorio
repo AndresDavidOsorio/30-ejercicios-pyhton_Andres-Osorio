@@ -1,0 +1,15 @@
+#******************************************ZONA DE FUNCIONES********************************
+def solicitar_datos():
+    primer_numero = int(input("Digite el numero para la multiplicacion:"))
+    segundo_numero = int(input("Digite el numero para la multiplicacion:"))
+    return primer_numero, segundo_numero
+def hacer_calculo(primer_numero, segundo_numero):
+    mult = primer_numero * segundo_numero
+    return mult
+def mensaje(mult):
+    print("la multiplicacion de los dos numeros es:"+ str(mult))
+#*****************************************ZONA DE CODGIO PRINCIPAL*****************************
+primer_numero, segundo_numero = solicitar_datos()
+mult = hacer_calculo(primer_numero, segundo_numero)
+mensaje(mult)
+    
