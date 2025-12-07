@@ -1,0 +1,16 @@
+#**************************************************************ZONA DE FUNCIONES******************************
+
+def solicitar_datos():
+    primer_numero = int(input("Digite un mumero para la resta:"))
+    segundo_numero = int(input("Digite un numero para la resta:"))
+    return primer_numero , segundo_numero
+def hacer_resta (primer_numero , segundo_numero):
+    resta = primer_numero - segundo_numero
+    return resta
+def mostrar_resultado(resta):
+    print("la resta es "+ str(resta))
+
+#*******************************************ZONA PRINCIPAL DE CODIGO********************************
+primer_numero , segundo_numero = solicitar_datos()
+resta = hacer_resta(primer_numero, segundo_numero)
+mostrar_resultado(resta)
