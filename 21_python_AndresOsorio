@@ -1,0 +1,14 @@
+#***********************************ZONA DE FUNCIONES***********************************
+def solcitar_datos():
+    primer_numero = int(input("Digite un numero para la suma:"))
+    segundo_numero= int(input("Digite un numero para la suma:"))
+    return primer_numero, segundo_numero
+def pedir_suma(primer_numero , segundo_numero):
+    suma = primer_numero + segundo_numero
+    return suma
+def mensaje (suma):
+    print("la suma es: "+ str(suma))
+#***********************************ZONA PRINCIPAL DE CODIGO***************************
+primer_numero, segundo_numero = solcitar_datos()
+suma = pedir_suma(primer_numero, segundo_numero)
+mensaje(suma)
