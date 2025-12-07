@@ -1,0 +1,14 @@
+#***************************************ZONA DE FUNCIONES************************************
+def escribir_datos():
+    primer_numero = int(input("Digite un numero:"))
+    segundo_numero = int(input("Digite un numero:"))
+    return primer_numero, segundo_numero
+def operacion(primer_numero, segundo_numero):
+    cuadrado = primer_numero* segundo_numero
+    return cuadrado
+def mensaje(cuadrado):
+    print("El cuadrado es"+ str(cuadrado))
+#***********************************ZONA DE CODIGO PRINCIPAL******************************************
+primer_numero , segundo_numero= escribir_datos()
+cuadrado = operacion(primer_numero, segundo_numero)
+mensaje(cuadrado)
