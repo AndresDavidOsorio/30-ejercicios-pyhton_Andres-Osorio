@@ -1,0 +1,17 @@
+#******************************zona de funcion**************************
+def solicitar_el_numero():
+    numero = int(input("Digite numero:"))
+    return numero
+def rectificar(dato_del_numero):
+    if dato_del_numero %  2 == 0:
+        mensaje = "el numero es par"
+    else:
+        mensaje = "El numero impar es"
+    return mensaje
+
+def mensaje (d_mensaje):
+    print("El numero es: " + d_mensaje) 
+#**********************zona principal del codgio****************
+dato_del_numero = solicitar_el_numero()
+d_mensaje = rectificar(dato_del_numero)
+mensaje(d_mensaje)
