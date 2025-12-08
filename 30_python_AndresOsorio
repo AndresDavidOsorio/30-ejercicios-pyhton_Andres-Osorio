@@ -1,0 +1,13 @@
+#********************************Zona de funciones*************************************
+def solicitar_el_radio():
+    r = float(input("Digite el r del circulo:"))
+    return r
+def calcular(r):
+    circ = 2 * 3.1416 * r
+    return circ
+def mensaje(circ):
+    print("la circuferencia del circulo es:"+ str(circ))
+#***********************************Zona de codigo principal*************************
+r = solicitar_el_radio()
+circ = calcular(r)
+mensaje(circ)
