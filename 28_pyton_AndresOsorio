@@ -1,0 +1,16 @@
+#******************************ZONA FUNCION*******************************
+def solicitar_datos():
+    base = float(input("Digite la base del triangulo :"))
+    altura = float(input("Digite la altura del traiangulo:"))
+    return base, altura
+def calcular(base, altura):
+    area = base * altura /2
+    return area
+def mostrar_resultado(area):
+    print("El area del triangulo es"+ str (area))
+
+
+#********************************ZONA PRINCIPAL DEL CODIGO********************
+base, altura = solicitar_datos()
+area = calcular(base, altura)
+mostrar_resultado(area)
