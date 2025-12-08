@@ -1,0 +1,15 @@
+#**********************************ZONA DE FUNCION*****************************
+def solicitar_numero():
+    numero = float(input("Digite el numero:"))
+    return numero
+def calcular(numero):
+    raiz= numero **0.5
+    return raiz
+def mensaje(raiz):
+    print("la raiz es"+ str(raiz))
+
+
+#*********************************ZONA DE CODIGO PRINCIPAL*********************
+numero = solicitar_numero()
+raiz = calcular(numero)
+mensaje(raiz)
