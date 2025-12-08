@@ -1,0 +1,13 @@
+#************************************ZONA DE FUNCIONES*****************************
+def pedir_km():
+    km= float(input("Digite los kilometros:"))
+    return km
+def operacion(km):
+    mill= km * 0.621371
+    return mill
+def mensaje(mill):
+    print ("Pasar mill a kilometros es:"+ str (mill))
+#*******************************ZONA PRINCIPAL DEL CODIGO****************************
+km = pedir_km()
+mill = operacion(km)
+mensaje(mill)
