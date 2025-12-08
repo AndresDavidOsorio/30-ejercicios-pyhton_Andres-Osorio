@@ -1,0 +1,13 @@
+#***********************************ZONA DE FUNCIONES********************************
+def definir():
+    cant = float(input("Digite la cantidad de dinero:"))
+    return cant
+def calculo(cant):
+    interes = cant * 0.05 
+    return interes
+def mensaje(interes):
+    print("El interes es de: "+ str(interes))
+#********************************ZONA PRINCIPAL DEL CODIGO***************************
+cant = definir()
+interes = calculo(cant)
+mensaje(interes)
