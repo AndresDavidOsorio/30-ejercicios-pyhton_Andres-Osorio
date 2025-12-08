@@ -1,0 +1,15 @@
+#**************************************ZONA DE FUNCION***************************
+def solictar_datos():
+    precio = float(input("Digite el precio del articulo:"))
+    return precio
+def calcular(precio):
+    desc = precio * 0.10
+    return desc
+def mensaje(desc):
+    print("El desc es:"+ str(desc))
+    
+#*****************ZONA PRINCIPAL DEL CODIGO********************************
+precio = solictar_datos()
+desc = calcular(precio)
+mensaje (desc)
+    
