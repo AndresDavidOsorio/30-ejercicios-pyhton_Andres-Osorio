@@ -1,0 +1,14 @@
+#***************************Zona de funciones**********************************
+def declarar():
+    long = float(input("Escriba la long del rectangulo:"))
+    ancho = float(input("Escriba el ancho :"))
+    return long, ancho
+def operacion(long, ancho):
+    area = long * ancho 
+    return area
+def mensaje(area):
+    print("El area del rectangulo es:" + str(area))
+#****************************ZONA PRINCIPAL DEL CODIGO**************************
+long, ancho = declarar()
+area = operacion(long, ancho) 
+mensaje(area)  
