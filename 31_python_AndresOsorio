@@ -1,0 +1,13 @@
+#*************************************ZONA DE FUNCIONES***********************************
+def solictar_los_datos():
+    hr = float(input("Digite el numero de horas:"))
+    return hr
+def operacion(hr):
+    min = hr * 60
+    return min
+def mensaje(min):
+    print("horas a minutos es"+ str(min))
+#*******************ZONA PRINCIPAL DEL CODIGO***************************
+hr = solictar_los_datos()
+min = operacion(hr)
+mensaje(min)
