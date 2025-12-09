@@ -1,0 +1,14 @@
+#**************************ZONA DE FUNCIONES**********************
+def solicitar_datos():
+    primero = float(input("Digite el primer numero para la division"))
+    segundo = float(input("Digite el segundo numero para la division"))
+    return primero, segundo
+def calculo(primero, segundo):
+    result = primero // segundo
+    return result
+def mensaje(result):
+    print("El result es"+ str(result))
+#**************************ZONA PRINCIPAL DEL CODGIO
+primero, segundo= solicitar_datos()
+result=calculo(primero, segundo)
+mensaje(result)
