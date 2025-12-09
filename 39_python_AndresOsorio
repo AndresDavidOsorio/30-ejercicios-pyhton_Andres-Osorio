@@ -1,0 +1,14 @@
+#******************************ZONA DE FUNCIONES************************
+def buscar_datos():
+    num_1 = float(input("Digite numero 1:"))
+    num_2 = float(input("Digite numero 2:"))
+    return num_1, num_2
+def calcular(num_1, num_2):
+    prom= num_1 + num_2 / 2
+    return prom
+def mensaje(prom):
+    print("El prom del numero es"+ str(prom))
+#****************************ZONA PRINCIPAL DEL CODIGO***********************
+num_1, num_2 = buscar_datos()
+prom = calcular(num_1, num_2)
+mensaje(prom)
